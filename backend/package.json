@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "server": "nodemon server.js",
-    "install-sever": "cd Server && npm install",
+    "install-server": "cd Server && npm install",
     "start-server": "cd Server && node server.js",
     "install-client": "cd client && npm install",
     "build-client": "cd client && npm run build",
