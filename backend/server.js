@@ -5,9 +5,9 @@ import foodRouter from "./routes/foodRoute.js";
 import userRouter from "./routes/userRoute.js";
 import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
-import path from 'path';
+// import path from 'path';
 import 'dotenv/config'
-import { fileURLToPath } from 'url';
+// import { fileURLToPath } from 'url';
 
 
 
@@ -36,17 +36,13 @@ app.use("/api/order", orderRouter)
 
 
 //deploymentcodee
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
-const resolvedPath = path.resolve(__dirname);
-if(process.env.NODE_ENV === 'production'){
-    app.use(express.static(path.join(resolvedPath, '../frontend/dist')))
+if (process.env.NODE_ENV === 'production') {
+    //*Set static folder up in production
+    app.use(express.static('frontend/dist'));
 
-    app.get('*', (req,res) => {
-        res.sendFile(path.resolve(resolvedPath, "..", "frontend", "dist", "index.html"))
-    })
-}else{
+    app.get('*', (req,res) => res.sendFile(path.resolve(__dirname, 'frontend', 'dist','index.html')));
+  }else{
     app.get("/", (req, res) => {
         res.send("API working")
     })
