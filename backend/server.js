@@ -45,7 +45,7 @@ if (process.env.NODE_ENV === 'production') {
     //*Set static folder up in production
     app.use(express.static('frontend/dist'));
 
-    app.get('*', (req,res) => res.sendFile(path.resolve(resolvedPath, 'frontend', 'dist','index.html')));
+    app.get('*', (req,res) => res.sendFile(path.resolve(resolvedPath,'..', 'frontend', 'dist','index.html')));
   }else{
     app.get("/", (req, res) => {
         res.send("API working")
