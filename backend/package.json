@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-      "server": "nodemon server.js",
-      "client": "npm start --prefix client",
-      "clientinstall": "npm install --prefix client",
-      "dev": "npm run server",
-      "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build -- prefix client"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "npm run server",
+    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build -- prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -22,7 +22,7 @@
     "e": "^0.2.33",
     "express": "^4.20.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.6.1",
+    "mongoose": "^8.8.1",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.4",
     "strip": "^3.0.0",
