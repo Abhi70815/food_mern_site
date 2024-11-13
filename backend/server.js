@@ -57,6 +57,9 @@ if (process.env.NODE_ENV === 'production') {
     
 }
 
+app.get('/hi',(req,res)=>{
+    res.json({msg:"hi mi"})
+})
 
 
 app.listen(PORT, '0.0.0.0', () => {
