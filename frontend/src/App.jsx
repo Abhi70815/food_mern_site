@@ -21,6 +21,8 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/order' element={<PlaceOrder/>}/>
+       <Route path='/admin' element={<iframe src="https://admin-food.onrender.com/list" frameBorder="0" width="100%" height="100%"></iframe>}/>
+
       </Routes>
     </div>
     <Footer/>

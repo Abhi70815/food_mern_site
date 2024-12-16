@@ -6,8 +6,8 @@ import { toast } from 'react-toastify'
 
 const Add = () => {
 
-    // https://food-del1.onrender.com
-    const url = "http://localhost:4000";
+
+    const url = "https://backend-q6fb.onrender.com";
 
     const [image, setImage] = useState(false);
     const [data, setData] = useState({
@@ -16,7 +16,7 @@ const Add = () => {
         price:"",
         category:"Salad"
     })
-
+// console.log(object);
     const onChangeHandler = (event) => {
         const name = event.target.name;
         const value = event.target.value;
