@@ -42,3 +42,10 @@
     margin: 20px 0;
     background-color: grey;
 }
+
+@media (max-width:1000px){
+    .footer-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

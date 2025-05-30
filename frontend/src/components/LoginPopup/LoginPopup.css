@@ -19,6 +19,11 @@
     font-size: 14px;
     animation: fadeIn 0.5s;
 }
+input{
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid gray ;
+}
 .login-popup-title{
     display: flex;
     justify-content: space-between;
