@@ -57,7 +57,7 @@ This project is a full-stack food delivery web application consisting of three m
 - The project uses modern JavaScript (ES modules) and React hooks.
 - The backend supports image uploads stored in the `uploads` directory.
 - The project is structured to support development and production environments.
-
 ---
 
 This explanation note provides a high-level understanding of the project architecture, technologies, and main features.
+
